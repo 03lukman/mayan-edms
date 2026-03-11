@@ -115,14 +115,15 @@ services:
       - mayan
       - net-caddy
     environment:
-      MAYAN_EXTRA_SETTINGS_MODULE: mayan.settings.local 
+      MAYAN_EXTRA_SETTINGS_MODULE: settings_local
 #     MAYAN_SETTINGS_MODULE: mayan_settings.ldap_connection_settings
-      MAYAN_SETTINGS_MODULE: mayan.settings/local
+#      MAYAN_SETTINGS_MODULE: mayan.settings.local
 #    environment:
 #      LDAPTLS_CACERT: /usr/local/share/ca-certificates/agson-ca.crt
     volumes:
-      - ${MAYAN_APP_VOLUME:-app}:/var/lib/mayan
+      - ${MAYAN_APP_VOLUME:-app}:/var/lib/mayan  
       - /home/thanos/docker/mayan/mayan-settings/settings_local.py:/opt/mayan-edms/lib/python3.11/site-packages/mayan/settings/local.py:ro
+#      - /home/thanos/docker/mayan/mayan-settings/settings_local.py:/var/lib/mayan/settings_local.py
 #      - /home/thanos/docker/mayan/certs/ad-agson-root-ca.crt:/usr/local/share/ca-certificates:ro
       - /home/thanos/docker/mayan/scanned_docs:/var/lib/mayan/watch_folder
       - ftp_volume:/var/lib/mayan/ftp_data
