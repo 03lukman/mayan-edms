@@ -1,3 +1,5 @@
+from mayan.settings.production import
+
 import ldap
 from django_auth_ldap.config import LDAPSearch
 import logging
@@ -13,6 +15,7 @@ AUTHENTICATION_BACKENDS = [
 # LDAP SERVER
 # ===============================
 AUTH_LDAP_SERVER_URI = "ldap://dc1.ad.agson.co.id:389"
+LDAP_URL = 'ldap://dc1.ad.agson.co.id:389'
 AUTH_LDAP_START_TLS = False
 
 # ===============================
