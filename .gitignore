@@ -1,0 +1,18 @@
+# environment
+.env
+
+# document data
+scanned_docs/
+
+# logs
+*.log
+
+# python
+__pycache__/
+*.pyc
+
+# docker
+postgres_data/
+redis_data/
+elasticsearch_data/
+media/
