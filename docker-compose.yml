@@ -116,6 +116,7 @@ services:
       - net-caddy
     environment:
       MAYAN_EXTRA_SETTINGS_MODULE: mayan.settings.local
+      MAYAN_SETTINGS_MODULE: mayan_settings.ldap_connection_settings
 #    environment:
 #      LDAPTLS_CACERT: /usr/local/share/ca-certificates/agson-ca.crt
     volumes:
