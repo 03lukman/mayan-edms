@@ -39,7 +39,7 @@ LDAP_ADMIN_DN = 'cn=Mayed,ou=Users,ou=Matraman,ou=Sites,DC=ad,DC=agson,DC=co,DC=
 LDAP_BASE_DN = 'DC=ad,DC=agson,DC=co,DC=id'
 LDAP_PASSWORD = 'v#H6MJyq9M'
 LDAP_USER_AUTO_CREATION = 'False'
-LDAP_URL = 'ldap://dc1.ad.agson.co.id:389'
+LDAP_URL = 'ldaps://dc1.ad.agson.co.id:636'
 
 AUTH_LDAP_BIND_DN = LDAP_ADMIN_DN
 AUTH_LDAP_BIND_PASSWORD = LDAP_PASSWORD

@@ -14,8 +14,8 @@ AUTHENTICATION_BACKENDS = [
 # ===============================
 # LDAP SERVER
 # ===============================
-AUTH_LDAP_SERVER_URI = "ldap://dc1.ad.agson.co.id:389"
-LDAP_URL = 'ldap://dc1.ad.agson.co.id:389'
+AUTH_LDAP_SERVER_URI = "ldaps://dc1.ad.agson.co.id:636"
+LDAP_URL = 'ldaps://dc1.ad.agson.co.id:636'
 AUTH_LDAP_START_TLS = False
 
 # ===============================
